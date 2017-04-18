@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1516px;
+        }
+        .auto-style2 {
+            height: 13px;
+        }
+        .auto-style4 {
+            height: 96px;
+            text-align: left;
+        }
+        .auto-style8 {
+            width: 287px;
+        }
+        .auto-style11 {
+            height: 11px;
+        }
+        .auto-style12 {
+            width: 211px;
+        }
+        .auto-style13 {
+            width: 24px;
+        }
+    </style>
+</head>
+<body style="height: 730px">
+    <form id="form1" runat="server">
+    <div style="height: 965px; background-image: url('/image/baoruan_com_34881462caa9e71049c44.jpg'); background-repeat: repeat; width: 1481px;">
+        
+        <table style="background-position: center; width: 100%; height: 710px;">
+            <tr>
+                <td class="auto-style4" colspan="5" style="font-family: 华文行楷; font-size: 68px; background-image: url('/image/q.jpg');">&nbsp;&nbsp;&nbsp;&nbsp; 校友录&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; welcome to here&nbsp;&nbsp;!&nbsp;&nbsp; &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2" colspan="5" style="background-color: #FFFFFF; background-image: url('/image/166-6626_IMG.jpg');">&nbsp;&nbsp;<asp:Menu ID="Menu2" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Medium" ForeColor="#666666" Orientation="Horizontal" StaticSubMenuIndent="14px">
+                    <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#E3EAEB" />
+                    <DynamicSelectedStyle BackColor="#1C5E55" />
+                    <Items>
+                        <asp:MenuItem Text="首页" Value="首页" NavigateUrl="~/index.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="班级管理" Value="班级管理" NavigateUrl="~/class.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="留言管理" Value="留言管理" NavigateUrl="~/detail - 副本 .aspx"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#1C5E55" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style11" colspan="5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p style="background-color: #CCFFFF; height: 22px;">
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="auto-style1">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style13"></td>
+                <td class="auto-style8" style="background-image: url('/image/q.jpg')"></td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
